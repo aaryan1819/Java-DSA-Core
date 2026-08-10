@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Basics/Basics.iml" filepath="$PROJECT_DIR$/Basics/Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA-Collections/DSA-Collections.iml" filepath="$PROJECT_DIR$/DSA-Collections/DSA-Collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java-DSA-Core.iml" filepath="$PROJECT_DIR$/.idea/Java-DSA-Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Leetcode-Solutions/Leetcode-Solutions.iml" filepath="$PROJECT_DIR$/Leetcode-Solutions/Leetcode-Solutions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOPS/OOPS.iml" filepath="$PROJECT_DIR$/OOPS/OOPS.iml" />
+    </modules>
+  </component>
+</project>
