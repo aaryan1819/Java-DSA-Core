@@ -1,5 +1,5 @@
 # Java-DSA-Core
-Documenting my core Java, DSA concepts, and problem-solving
+**Documenting my core Java, DSA concepts, and problem-solving**
 
 Day 1: Some basic java programs to get back in the flow
 
