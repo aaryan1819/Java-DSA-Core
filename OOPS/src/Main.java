@@ -6,6 +6,7 @@ void main() {
 //    s2.greeting();
     s1.setMarks(650);
     System.out.println(s1.getMarks());
+    System.out.println(s2.getName());
 }
 
 class Student {
@@ -24,13 +25,29 @@ class Student {
         return this.marks;
     }
 
-    public void setMarks(int mark) {
+    public void setMarks(float mark) {
         if (mark < 0 || mark > 100) {
             System.out.println("Enter a valid mark. (0-100)");
         }
         else {
             this.marks = mark;
         }
+    }
+
+    public int getRno() {
+        return this.rno;
+    }
+
+    public void setRno(int roll) {
+        this.rno = roll;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String naam) {
+        this.name = naam;
     }
 
     void greeting() {
