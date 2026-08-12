@@ -2,20 +2,35 @@ void main() {
     Student s1 = new Student(01, "aman", 98);
     Student s2 = new Student(02, "ashish", 87);
 
-    s1.greeting();
-    s2.greeting();
-
+//    s1.greeting();
+//    s2.greeting();
+    s1.setMarks(650);
+    System.out.println(s1.getMarks());
 }
 
 class Student {
-    int rno;
-    String name;
-    float marks;
+    private int rno;
+    private String name;
+    private float marks;
 
     Student(int roll, String naam, float mark) {
         this.rno = roll;
         this.name = naam;
         this.marks = mark;
+    }
+
+    public float getMarks() {
+//        float mark = this.marks;
+        return this.marks;
+    }
+
+    public void setMarks(int mark) {
+        if (mark < 0 || mark > 100) {
+            System.out.println("Enter a valid mark. (0-100)");
+        }
+        else {
+            this.marks = mark;
+        }
     }
 
     void greeting() {
