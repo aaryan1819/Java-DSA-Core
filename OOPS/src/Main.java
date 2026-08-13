@@ -1,12 +1,16 @@
 void main() {
     Student s1 = new Student(01, "aman", 98);
     Student s2 = new Student(02, "ashish", 87);
+    CSEStudent cseStudent = new CSEStudent(03, "adib", 77, "https://github.com/aaryan1819");
 
 //    s1.greeting();
 //    s2.greeting();
-    s1.setMarks(650);
-    System.out.println(s1.getMarks());
-    System.out.println(s2.getName());
+//    s1.setMarks(650);
+//    System.out.println(s1.getMarks());
+//    System.out.println(s2.getName());
+    cseStudent.setGithuburl("https://github.com/aaryan1819");
+    System.out.println(cseStudent.getGithuburl());
+//    cseStudent.greet();
 }
 
 class Student {
@@ -52,5 +56,26 @@ class Student {
 
     void greeting() {
         System.out.println("Hello my name is " + this.name + "\nMy roll no. is " + this.rno + "\nI got " + this.marks + " marks!");
+    }
+}
+
+class CSEStudent extends Student {
+    private String githuburl;
+    CSEStudent(int roll, String naam, float mark, String url ) {
+        super(roll, naam, mark);
+        this.githuburl = url;
+    }
+
+    public String getGithuburl() {
+        return githuburl;
+    }
+
+    void setGithuburl(String url) {
+        this.githuburl = url;
+    }
+
+    void greet() {
+        super.greeting();
+        System.out.println("githuburl : " + this.githuburl);
     }
 }
