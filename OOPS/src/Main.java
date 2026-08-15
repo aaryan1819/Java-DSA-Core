@@ -9,8 +9,9 @@ void main() {
 //    System.out.println(s1.getMarks());
 //    System.out.println(s2.getName());
     cseStudent.setGithuburl("https://github.com/aaryan1819");
-    System.out.println(cseStudent.getGithuburl());
-//    cseStudent.greet();
+//    System.out.println(cseStudent.getGithuburl());
+    cseStudent.greeting();
+    s1.greeting();
 }
 
 class Student {
@@ -74,7 +75,8 @@ class CSEStudent extends Student {
         this.githuburl = url;
     }
 
-    void greet() {
+    @Override
+    void greeting() {
         super.greeting();
         System.out.println("githuburl : " + this.githuburl);
     }
